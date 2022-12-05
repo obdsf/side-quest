@@ -14,3 +14,9 @@ Best physics engine for babylon?
 -   Finally make the following changes to `index.js` as described in [this answer](https://discourse.threejs.org/t/how-to-convert-ammo-js-to-es6-module/30633):
     1. Towards the end of the file, find the command `this.Ammo=b;` and remove it completely.
     2. At the end of the file, add the command `export default Ammo;`;
+
+More Info:
+
+-   https://doc.babylonjs.com/setup/frameworkPackages/es6Support#ammo
+-   https://doc.babylonjs.com/setup/frameworkPackages/es6Support#ammo-with-types-enabled
+-   https://github.com/giniedp/ammojs-typed
