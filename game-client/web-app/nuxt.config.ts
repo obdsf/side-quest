@@ -7,7 +7,11 @@ export default defineNuxtConfig({
     // todo: figure out why the `target` option was removed
     // target: "static",
     // https://nuxt.com/docs/api/configuration/nuxt-config#typescript
-    typescript: { shim: false, strict: true, typeCheck: true },
+    typescript: {
+        shim: false,
+        strict: true,
+        typeCheck: true,
+    },
     // https://codybontecou.com/how-to-use-vuetify-with-nuxt-3.html
     css: ["vuetify/lib/styles/main.sass", "@mdi/font/css/materialdesignicons.min.css"],
     build: { transpile: ["vuetify"] },

@@ -5,7 +5,7 @@ export const scribe = new Scribe({ level: LogLevels.All });
 
 export const main = async (host: HTMLCanvasElement) => {
     const sdq = new SideQuest({ host });
-    const scene = sdq.createScene();
+    const scene = await sdq.createScene();
     sdq.engine.runRenderLoop(() => {
         scene.render();
     });

@@ -22,7 +22,7 @@
                     </v-row>
                 </v-container>
             </v-overlay> -->
-            <v-dialog v-model="overlay">
+            <!-- <v-dialog v-model="overlay">
                 <v-container>
                     <v-row>
                         <v-col>
@@ -41,7 +41,7 @@
                         </v-col>
                     </v-row>
                 </v-container>
-            </v-dialog>
+            </v-dialog> -->
         </v-main>
     </v-app>
 </template>
@@ -86,13 +86,13 @@ onMounted(() => {
 </script>
 
 <style>
+/* removing ugly scroller */
 html, body {
     overflow: hidden;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
+/* mandatory to make the canvas responsive,
+used in combination with the resize
+callback (in side-quest.ts) */
 .engine-host {
     width: 100%;
     height: 100%;
